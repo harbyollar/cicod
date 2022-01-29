@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="mystyle.css"> <!--large screen (1920px and above)-->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<script src="myscript.js"></script>
 </head>
 <body>
     <!--This is hmtl for nav bar-->
@@ -34,7 +36,7 @@
         </div>
     </nav>
     
-    <div>
+
         <!--Html for the aside menu right under the nav bar-->
         <div class="aside"> 
             <h5><span id="h51"><i class="fas fa-bars"></i></span><span id="h52"> categories</span> <span id="h53">See all</span>
@@ -52,30 +54,25 @@
             
         </div>
             <!--Container 1- Html for the container right after/opposite the aside menu-->
-        <div class="container1">
-           <div id="side1">
-                <div id="lefticon">
-                    <a href=""><i class="fas fa-angle-left"></i></a>
-                </div>
-                <div id="p1">
-                    Original Car Parts
-                </div>
-
-                <div id="p3">
-                    Proin ac quam et lectus vestibulum blandit. Nunc maximus nibh at placerat tincidunt. Nam sem lacus.
-                </div>
-           </div>
-           
-           <div id="side2">
-              <div id="p2">
-
-              </div>
-                <div id="righticon">
-                   <a href=""><i class="fas fa-angle-right"></i></a>
-                </div>
-           </div>
+        <div class="slideshow-container">
+            <div class="mySlides fade" >
+                <img src="carpart.jpeg" style="width:100%" id="imgslide">
+            </div>
+            <div class="mySlides fade" id="me">
+                <img src="carpart.jpeg" style="width:100%" id="imgslide">
+            </div>
+            <div class="mySlides fade" id="me">
+                <img src="carpart.jpeg" style="width:100%" id="imgslide">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-    </div>
+        <!--<div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div> -->
+
     <!--Container 2--Html for the content right under container 1-->
     <div id="container2">
         <div id="side3">
@@ -92,13 +89,14 @@
             </div>
             <div id="sub4"><img src="id-card.png" alt="id-card" id="p10"></div>
         </div>
+
     </div>
 
     <div id="p11">
         Sponsored Webshops
     </div>
     <div id="container3">
-        <div id="p13"><img src="food.png" alt="" id="image1"> <p id="p14">Name of Food Store</p></div>
+        <div id="p13" class="p13"><img src="food.png" alt="" id="image1"> <p id="p14">Name of Food Store</p></div>
         <div id="p13"><img src="nameoffashion.png" alt="" id="image1"> <p id="p14">Name of Fashion Shop</p></div>
         <div id="p13" style="padding: 0;"><img src="skincare.png" alt="" id="image1"> <p id="p14">Skin care Shop</p></div>
     </div>
@@ -110,7 +108,7 @@
         <div id="p17"><img src="motors.png" alt="Emeka Motors" id="image2"> <p id="p16">Emeka Motors</p></div>
         <div id="p17"><img src="pizza.png" alt="Pizza club" id="image2"><p id="p16">Pizza club</p></div>
     </div>
-    <div id="container4" style="margin-top: 56px;">
+    <div id="container4" style="margin-top: 2.8vw;">
         <div id="p17"><img src="farm.png" alt="farm" id="image2"><p id="p16">Farm 2 Table</p></div>
         <div id="p17"><img src="gadget.png" alt="gadget" id="image2"><p id="p16">Gadget Lord</p></div>
         <div id="p17"><img src="hair.png" alt="hair" id="image2"><p id="p16">Hair chick</p></div>
@@ -128,17 +126,17 @@
     <div id="container6">
         <div id="p22">
             <div id="p23">
-
+                <i class="fas fa-plane" id="icon2"></i>
             </div>
         </div>
         <div id="p22">
             <div id="p23">
-
+                <span class="material-icons" id="icon2">fastfood</span>
             </div>
         </div>
         <div id="p22">
             <div id="p23">
-                <i class="fas fa-hospital-alt" id="icon2"></i>
+                <span class="material-icons" id="icon2">flight</span>
             </div>
             <p id="sub5">Hospitality</p>
         </div>
